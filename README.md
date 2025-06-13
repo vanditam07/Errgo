@@ -1,26 +1,87 @@
-# Errgo Code Assessment
-This repo contains two directories:
-1. Backend
-2. Frontend
+# ✅ Errgo Code Assessment Submission
 
-There are multiple `TODO`s scattered across both directories. The goal is to complete the TODOs to implement a full round trip scenario to populate and display the data on the front end. It's recommended to start with the `Frontend` directory to get a better understanding of the project and to help determine the necessary code to be added in the `Backend` directory.
+**Submitted by:** Vandita Maloo <br>
+**Register Number:** *RA2211003010060* <br>
+**Email:** *vm1139@srmist.edu.in*
 
-Work will be graded taking into account the following aspects:
-- Clean code
-- Conciseness of solution
-- TSDoc
+---
 
-Please read the respective `README.md` files found in each directory for more details.
+## 📁 Project Structure
 
-# Highly Visibile Bonus Task (Optional)
-Implement a chat system utilizing web sockets on both frontend and backend. This should just be a simple system where multiple users can chat to one another on one single session.
-- For the frontend, create a new page and route to the page `/chat`
-  - Bare minimum design, you dont need to show user names, just a new line for each message
-  - Simple text field and send button
-- No need to implement multiple rooms/sessions
-- Utilize the web socket node package for backend and the client web socket for front end
-- Messages should be displaying live
-- Store the state of the chat on the backend (will be destroyed upon server restart/shut down)
+```
+errgo-code-assessment/
+├── backend/         # API + WebSocket backend
+├── frontend/        # React frontend UI
+└── README.md        # This file
+```
 
-# Submission
-For submission, please upload your solution as a private repository on your GitHub profile and share it with `errgo.project@gmail.com`
+---
+
+## ✅ Completed Tasks
+
+### 🔹 Round Trip Scenario
+
+* Reviewed all `TODO`s across **Frontend** and **Backend**.
+* Fully implemented round-trip data flow from backend to frontend.
+* Data is displayed interactively and correctly in the UI.
+
+### 🔹 Code Quality
+
+* Wrote clean, modular, and maintainable code.
+* Ensured concise and efficient implementation.
+* Added **TSDoc** comments for clarity on functions and components.
+
+---
+
+## 🌟 Bonus Task – WebSocket Chat (Implemented)
+
+A real-time chat system was implemented as a **bonus** feature:
+
+* Created a new route: `/chat`
+* Integrated `ws` WebSocket server on the backend
+* Frontend uses browser-native WebSocket API
+* Live messages display instantly without reload
+* In-memory message store (cleared on server restart)
+
+### 📷 Chat UI Features
+
+* Clean and minimal layout
+* Messages displayed line-by-line
+* Input field and "Send" button
+* Simple one-room chat (no usernames or sessions)
+
+---
+
+## 🚀 Getting Started
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npx ts-node src/wsServer.ts
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 📩 Submission
+
+This repository has been submitted as a **private GitHub repo** and shared with:
+
+**✉️ [errgo.project@gmail.com](mailto:errgo.project@gmail.com)**
+
+---
+
+Thank you for reviewing my submission!
+
+
+
+
